@@ -4,6 +4,12 @@ light sample
 ## Getting Started
 `npm i react-water-layout`
 
+##Demo
+`git clone https://github.com/leeleoo/react-waterfall-layout.git`
+
+and npm install in react-waterfall-layout
+
+then run npm start and visit localhost:3344
 
 ## Usage
 |props|type|description|
