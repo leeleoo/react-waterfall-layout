@@ -4,7 +4,7 @@ light sample
 ## Getting Started
 `npm i react-water-layout`
 
-##Demo
+## Demo
 `git clone https://github.com/leeleoo/react-waterfall-layout.git`
 
 and npm install in react-waterfall-layout
@@ -19,7 +19,7 @@ then run npm start and visit localhost:3344
 |`itemWith`|number (default 200)| the width of each waterfall item|
 
 you code would like this
-```
+```jsx harmony
   <WaterFall
       data={[{title:'title1',content:'content1'},{title:'title1',content:'content2,content2,content2'}]}
       renderItem={({title,content},index)=>{
@@ -29,15 +29,19 @@ you code would like this
       className="blah"
   />
 ```
-##Last
+## Last
     if you will overwrite the default style ,  I  would give you best wishes;
     the default style of waterfall container:
+    
+```javascript
     { 
         display: 'flex', 
         justifyContent: 'space-around', 
         overflow: 'auto', 
         alignItems: 'flex-start' 
     }
+```
+
 
 
 
