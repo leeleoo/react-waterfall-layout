@@ -35,6 +35,7 @@ class Main extends Component {
           <WaterFall
               data={this.data}
               renderItem={this.renderItem}
+              
           />
         </div>
     )

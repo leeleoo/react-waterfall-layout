@@ -1,11 +1,12 @@
 const webpack = require('webpack')
+const path    = require('path')
 
 module.exports = {
   entry    : {
-    'bundle': './src/react-image-cutter/index.js'
+    'bundle': './src/react-waterfall-layout/index.js'
   },
   output   : {
-    path         : 'dist',
+    path         : path.resolve(__dirname, './dist'),
     library      : 'react-waterfall-layout',
     libraryTarget: 'umd',
     filename     : 'bundle.js'
@@ -27,7 +28,12 @@ module.exports = {
         amd      : 'react-dom'
       }
     }, {
-    
+      'prop-types': {
+        root     : 'PropTypes',
+        commonjs2: 'prop-types',
+        commonjs : 'prop-types',
+        amd      : 'prop-types'
+      }
     }
   ],
   module   : {

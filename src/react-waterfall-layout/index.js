@@ -27,7 +27,6 @@ class WaterFall extends PureComponent {
     this.dataIndex     = 0
     let containerDOM   = ReactDOM.findDOMNode(this.refs.waterfall_container)
     let columns        = this.getColumn(containerDOM, itemWith || 200)
-    console.log('columns', columns)
     this.setState({
       columns,
       waterfall: fillArray([], columns)
@@ -46,10 +45,8 @@ class WaterFall extends PureComponent {
     
     this.setState(prevState => {
       let heightArr = this.getColumnHeight()
-      console.log('heightArr', heightArr)
       let minHeightInArrIndex = getIndexFromArray(heightArr,
           Math.min.apply(this, heightArr))
-      console.log('minHeightInArrIndex', minHeightInArrIndex)
       let newArr = [].concat(prevState.waterfall)
       
       let _willAdd = newArr.splice(minHeightInArrIndex, 1)[0]
